@@ -1,4 +1,4 @@
-# On-Prem to Azure Cloud Migration Plan for PeopleSoft ERP System
+# On-Prem to Azure Cloud Migration Plan for PeopleSoft ERP Systems
 
 ## Scenario:
 
@@ -8,16 +8,23 @@ As a DevOps Engineer, you and your team have been tasked with creating an On-Pre
 ## System Information
 
 ● Web Servers (RHEL7)
+
 ● App Servers (RHEL7)
+
 ● Process Scheduler Servers (RHEL7)
+
 ● Elasticsearch Servers
+
 ● Oracle 19 (on prem Exadata) DB
+
 ● Oracle PeopleSoft
 
 ## Tools Available
 
 ● Azure Cloud Platform
+
 ● Azure Oracle Exadata DatabaseService
+
 ● Terraform, Ansible
 
 ### Please prepare a presentation based on the scenario presented above. You will have 10 minutes to present an approach that should cover the following:
