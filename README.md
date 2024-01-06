@@ -20,7 +20,7 @@ As a DevOps Engineer, you and your team have been tasked with creating an On-Pre
 ● Azure Oracle Exadata DatabaseService
 ● Terraform, Ansible
 
-Please prepare a presentation based on the scenario presented above. You will have 10 minutes to present an approach that should cover the following:
+### Please prepare a presentation based on the scenario presented above. You will have 10 minutes to present an approach that should cover the following:
 
  ● Milestones you’d propose the team to complete in the first year.
 
