@@ -22,18 +22,18 @@ As a DevOps Engineer, you and your team have been tasked with creating an On-Pre
 
 Please prepare a presentation based on the scenario presented above. You will have 10 minutes to present an approach that should cover the following:
 
-● Milestones you’d propose the team to complete in the first year.
+ ● Milestones you’d propose the team to complete in the first year.
 
-● High level architecture design of the cloud platform.
+ ● High level architecture design of the cloud platform.
 
-● Technology considerations:
+ ● Technology considerations:
 
-○ Container vs Azure VM. Provide justification.
+    ○ Container vs Azure VM. Provide justification.
 
-○ CI/CD approach. Provide justification.
+    ○ CI/CD approach. Provide justification.
 
-○ Data migration approach.
+    ○ Data migration approach.
 
-● Consideration for Scalability, High Availability, Disaster Recovery, and compliance with NIST 800-171 or comparable framework.
+ ● Consideration for Scalability, High Availability, Disaster Recovery, and compliance with NIST 800-171 or comparable framework.
 
-● Is there a more cost effective solution than a lift & shift? If so, please elaborate
+ ● Is there a more cost effective solution than a lift & shift? If so, please elaborate
