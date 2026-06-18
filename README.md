@@ -1,55 +1,51 @@
-# On-Prem to Azure Cloud Migration Plan for PeopleSoft ERP Systems
+# On-Prem to Azure Cloud Migration: PeopleSoft ERP Case Study
 
-## Scenario:
+A cloud migration architecture and strategy for moving an Oracle PeopleSoft ERP suite from on-premises infrastructure to Microsoft Azure. This case study covers the full migration approach — from high-level architecture and technology tradeoffs to phased delivery milestones, with first-class consideration for scalability, high availability, disaster recovery, and regulatory compliance.
 
-It has been announced that Company X, plans to migrate the on-prem Oracle PeopleSoft ERP systems to the Azure cloud platform to capitalize on scalability and cost-efficiency. The migration includes the suite of PeopleSoft ERP System running on Oracle DB backend.
-As a DevOps Engineer, you and your team have been tasked with creating an On-Prem to Azure Cloud migration plan for the PeopleSoft systems. You are a part of an Agile team (8 including yourself) and have support from a Product Owner and Product Manager.
+## Overview
 
-## System Information
+The objective: migrate an on-premises Oracle PeopleSoft ERP suite — running across web, application, and process-scheduler tiers on a backend Oracle Exadata database — to Azure, capturing the scalability and cost-efficiency benefits of the cloud while preserving reliability and compliance.
 
-● Web Servers (RHEL7)
+This repository contains the architecture design and migration strategy, including existing-state and proposed-state architecture diagrams (see the slides for full detail).
 
-● App Servers (RHEL7)
+## Source system
 
-● Process Scheduler Servers (RHEL7)
+The on-premises environment consists of:
 
-● Elasticsearch Servers
+- Web servers (RHEL 7)
+- Application servers (RHEL 7)
+- Process scheduler servers (RHEL 7)
+- Elasticsearch servers
+- Oracle 19 database on on-prem Exadata
+- Oracle PeopleSoft ERP suite
 
-● Oracle 19 (on prem Exadata) DB
+## Target platform
 
-● Oracle PeopleSoft
+- Azure Cloud Platform
+- Azure Oracle Exadata Database Service (managed Oracle backend)
+- Terraform for infrastructure provisioning
+- Ansible for configuration management
 
-## Tools Available
+## What the design covers
 
-● Azure Cloud Platform
+**Phased delivery roadmap** — a first-year migration plan broken into milestones, sequencing assessment, foundation build-out, workload migration, and cutover to minimize risk and downtime.
 
-● Azure Oracle Exadata DatabaseService
+**High-level cloud architecture** — a proposed Azure target architecture mapping each on-prem tier to its cloud equivalent, with networking, security, and data-tier design.
 
-● Terraform, Ansible
+**Technology tradeoffs with justification:**
+- *Containers vs Azure VMs* — analysis of which PeopleSoft tiers are good containerization candidates versus which are better suited to VMs, with the reasoning behind each choice.
+- *CI/CD approach* — pipeline design for provisioning and configuration using Terraform and Ansible, with automated, repeatable deployments across environments.
+- *Data migration approach* — strategy for migrating the Oracle backend to Azure's managed Exadata service with minimal disruption.
 
-### Please prepare a presentation based on the scenario presented above. You will have 10 minutes to present an approach that should cover the following:
+**Non-functional design** — explicit treatment of scalability, high availability, disaster recovery (HA & DR), and compliance with NIST 800-171 (or comparable framework).
 
- ● Milestones you’d propose the team to complete in the first year.
+**Cost optimization** — analysis of whether a straight lift-and-shift is the right approach, or whether a re-platforming strategy delivers better long-term cost efficiency.
 
- ● High level architecture design of the cloud platform.
+## Files
 
- ● Technology considerations:
+- `OnPrem_to_Cloud_OIT.pdf` — full architecture and migration plan (PDF)
+- `OnPrem_to_Cloud_OIT.pptx` — presentation version
 
-    ○ Container vs Azure VM. Provide justification.
+## Key takeaways
 
-    ○ CI/CD approach. Provide justification.
-
-    ○ Data migration approach.
-
- ● Consideration for Scalability, High Availability, Disaster Recovery, and compliance with NIST 800-171 or comparable framework.
-
- ● Is there a more cost effective solution than a lift & shift? If so, please elaborate
-
- ### Existing Architecture
-
- ![image](https://github.com/harshithaanuganti/cloud_migration_plan/assets/74675390/0efc8924-3d16-4e88-847c-f40ca0e9d205)
-
-### Proposed Cloud Architecture
-
-![image](https://github.com/harshithaanuganti/cloud_migration_plan/assets/74675390/c5c9d64d-6012-4e07-a3e1-4bbdc3cb1c23)
-
+This case study demonstrates a structured approach to enterprise cloud migration: assessing the existing system, designing a compliant and resilient target architecture, justifying technology choices with clear tradeoffs, and sequencing the work into a realistic, low-risk delivery plan — rather than defaulting to a simple lift-and-shift.
