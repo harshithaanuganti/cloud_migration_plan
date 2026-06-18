@@ -32,6 +32,14 @@ The on-premises environment consists of:
 
 **High-level cloud architecture** — a proposed Azure target architecture mapping each on-prem tier to its cloud equivalent, with networking, security, and data-tier design.
 
+### Existing Architecture
+
+![Existing on-premises architecture](docs/images/existing-architecture.jpeg)
+
+### Proposed Cloud Architecture
+
+![Proposed Azure architecture](docs/images/proposed-architecture.jpeg)
+
 **Technology tradeoffs with justification:**
 - *Containers vs Azure VMs* — analysis of which PeopleSoft tiers are good containerization candidates versus which are better suited to VMs, with the reasoning behind each choice.
 - *CI/CD approach* — pipeline design for provisioning and configuration using Terraform and Ansible, with automated, repeatable deployments across environments.
